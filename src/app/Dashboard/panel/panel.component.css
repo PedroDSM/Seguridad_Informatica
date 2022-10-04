@@ -48,10 +48,8 @@ align-items: center;
 
   .btn-neon:hover{
     background: transparent;
-    color:#ff8000;
-    text-shadow: 0 0 3px #ff8000,0 0 3px #ff8000,0 0 3px #ff8000,
-    0 0 1px rgb(0, 0, 0),0 0 1px rgb(0, 0, 0),0 0 1px rgb(0, 0, 0),
-    0 0 1.5px #fff,0 0 1.5px #fff,0 0 1.5px #fff;;
+    color:rgb(0, 0, 0);
+    text-shadow:0 0 1.5px #fff,0 0 1.5px #fff,0 0 1.5px #fff;
     box-shadow: 0 0 10px #ff8000, 0 0 10px #ff8000, 
     0 0 10px #ff8000;
     transition-delay: 1s;
