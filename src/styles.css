@@ -3,7 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .fondo{
-    background-image: url("src/assets/fondo.jpg"); 
+    background-image: url("src/assets/negro.webp"); 
     background-color: red; 
     background-size: cover; 
     background-position: right bottom; 
