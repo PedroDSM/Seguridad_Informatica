@@ -1,0 +1,45 @@
+
+<div class="notificaciones">
+    <h1 class="text0">SHOWING MESSAGES</h1>
+    <mat-list class="center">
+        <span class="text0">Nombre:****************</span>
+        <mat-list-item class="text0">Comentario Usuario 1</mat-list-item>
+        <mat-divider class="color"></mat-divider>
+        <span class="text0">Nombre:****************</span>
+        <mat-list-item class="text0">Comentario Usuario 2</mat-list-item>
+        <mat-divider class="color"></mat-divider>
+        <span class="text0">Nombre:****************</span>
+        <mat-list-item class="text0">Comentario Usuario 3</mat-list-item>
+        <mat-divider class="color"></mat-divider>
+        <span class="text0">Nombre:****************</span>
+        <mat-list-item class="text0">Comentario Usuario 4</mat-list-item>
+        <mat-divider class="color"></mat-divider>
+        <span class="text0">Nombre:****************</span>
+        <mat-list-item class="text0">Comentario Usuario 5</mat-list-item>
+        <mat-divider class="color"></mat-divider>
+        <span class="text0">Nombre:****************</span>
+        <mat-list-item class="text0">Comentario Usuario 6</mat-list-item>
+        <mat-divider class="color"></mat-divider>
+      </mat-list>
+</div>
+<div class="desencriptar">
+    <mat-card class="sin">
+        <mat-card-header>
+            <mat-card-title class="text0">Sing Up</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="example-form"[formGroup]="form" autocomplete="off">
+              <mat-form-field class="example-full-width1" appearance="fill">
+                <mat-label class="text">Ingrese IP Para Desencriptar Los Mensajes Deseados</mat-label>
+                <input type="text" matInput formControlName="nombre" placeholder="Name">
+              </mat-form-field>
+                  <br>
+                  <button mat-button class="color" (click)="send()">Agregar</button>
+              </form>
+              
+            </mat-card-content>
+    </mat-card>
+
+</div>
+
+
