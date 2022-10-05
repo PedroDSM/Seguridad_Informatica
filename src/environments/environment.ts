@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   urlBase: 'http://127.0.0.1:3333'
+  // urlBase: 'http://192.168.253.139:3333'
 };
 
 /*

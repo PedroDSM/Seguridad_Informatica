@@ -1,27 +1,13 @@
 <h1 class="text0">Lista De Comentarios</h1>
 
 <div class="container">
-
-    <mat-list class="center">
-        <span class="texto">Nombre:****************</span>
-        <mat-list-item class="texto">///////////////////// Comentario Usuario 1 /////////////////////</mat-list-item>
+  <div class="cuadro">
+    <mat-list class="center" *ngFor="let items of posts">
+        <span class="texto">{{items.id}}</span>
+        <mat-list-item class="texto">{{items.message}}</mat-list-item>
         <mat-divider></mat-divider>
-        <span class="texto">Nombre:****************</span>
-        <mat-list-item class="texto">///////////////////// Comentario Usuario 2 /////////////////////</mat-list-item>
-        <mat-divider></mat-divider>
-        <span class="texto">Nombre:****************</span>
-        <mat-list-item class="texto">///////////////////// Comentario Usuario 3 /////////////////////</mat-list-item>
-        <mat-divider></mat-divider>
-        <span class="texto">Nombre:****************</span>
-        <mat-list-item class="texto">///////////////////// Comentario Usuario 4 /////////////////////</mat-list-item>
-        <mat-divider></mat-divider>
-        <span class="texto">Nombre:****************</span>
-        <mat-list-item class="texto">/////////////////////Comentario Usuario 5 /////////////////////</mat-list-item>
-        <mat-divider></mat-divider>
-        <span class="texto">Nombre:****************</span>
-        <mat-list-item class="texto">///////////////////// Comentario Usuario 6 /////////////////////</mat-list-item>
-        <mat-divider></mat-divider>
-      </mat-list>
+    </mat-list>
+  </div>
 
 <div class="container2">
   <mat-card>
@@ -32,10 +18,14 @@
           <form [formGroup]="form">
             <mat-form-field class="example-full-width" appearance="fill">
               <mat-label class="text">Ingrese IP Para Desencriptar Los Mensajes Deseados</mat-label>
-              <input matInput formControlName="IP" placeholder="Direccion IP">
+              <input matInput formControlName="ip" placeholder="Direccion IP">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label class="text">Ingrese Mensaje</mat-label>
+              <input matInput formControlName="message" placeholder="Mensaje">
             </mat-form-field>
                 <br>
-                <a class="btn-neon pointer" (click)="send()">
+                <a class="btn-neon pointer">
                   <span id="span1"></span>
                   <span id="span2"></span>
                   <span id="span3"></span>
