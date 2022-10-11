@@ -18,14 +18,14 @@
           <form [formGroup]="form">
             <mat-form-field class="example-full-width" appearance="fill">
               <mat-label class="text">Ingrese IP Para Desencriptar Los Mensajes Deseados</mat-label>
-              <input matInput formControlName="ip" placeholder="Direccion IP">
+              <input matInput formControlName="user_ip" placeholder="Direccion IP">
             </mat-form-field>
             <mat-form-field class="example-full-width" appearance="fill">
               <mat-label class="text">Ingrese Mensaje</mat-label>
               <input matInput formControlName="message" placeholder="Mensaje">
             </mat-form-field>
                 <br>
-                <a class="btn-neon pointer">
+                <a class="btn-neon pointer" (click)="send()">
                   <span id="span1"></span>
                   <span id="span2"></span>
                   <span id="span3"></span>

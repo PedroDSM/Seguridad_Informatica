@@ -19,7 +19,7 @@ export class PanelComponent implements OnInit {
   }
 
   form = new FormGroup({
-    ip: new FormControl('', [Validators.required]),
+    user_ip: new FormControl('', [Validators.required]),
     message: new FormControl('', [Validators.required]),
   });
   
